@@ -39,7 +39,6 @@ var compiler = webpack({
     loaders: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
           "babelrc": false,
@@ -63,19 +62,24 @@ compiler.run(function(err, stats) {
   if (err) {
     throw err
   } else if (stats.hasErrors()) {
-    console.log('build errors')
-    stats.toString({
-      chunks: false, // Makes the build much quieter
-      colors: false,
-    })
+    console.log('BUILD ERRORS')
+    console.log(stats.toJson().errors)
     return
   }
-  console.log('stats', stats)
+
+  console.log('BUILD SUCCESS')
+  console.log(stats)
+
   var statsString = JSON.stringify(stats.toJson('verbose'), null, 2)
   var fileContent = mfs.readFileSync(path.join(DIRECTORY, 'output', 'index.js'), 'utf8')
+
+  try {
+    fs.mkdirSync(path.join(DIRECTORY, 'output'))
+  } catch (e) {
+    ;
+  }
 
   fs.writeFileSync(path.join(DIRECTORY, 'output', 'stats.json'), statsString)
   fs.writeFileSync(path.join(DIRECTORY, 'output', 'index.string.js'), JSON.stringify(fileContent))
   fs.writeFileSync(path.join(DIRECTORY, 'output', 'index.js'), fileContent)
-  // console.log('fileContent', fileContent)
 })
