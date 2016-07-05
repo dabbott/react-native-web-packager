@@ -13,11 +13,27 @@ var compiler = webpack({
   output: {
     path: path.join(DIRECTORY, 'output'),
     filename: '[name].js',
+    libraryTarget: 'umd',
   },
   externals: {
-    react: 'React',
-    "react-dom": 'ReactDOM',
-    "react-native": 'ReactNative',
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    },
+    "react-dom": {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom',
+      commonjs: 'react-dom',
+      amd: 'react-dom'
+    },
+    "react-native": {
+      root: 'ReactNative',
+      commonjs2: 'react-native',
+      commonjs: 'react-native',
+      amd: 'react-native'
+    },
   },
   module: {
     loaders: [
@@ -59,6 +75,7 @@ compiler.run(function(err, stats) {
   var fileContent = mfs.readFileSync(path.join(DIRECTORY, 'output', 'index.js'), 'utf8')
 
   fs.writeFileSync(path.join(DIRECTORY, 'output', 'stats.json'), statsString)
-  fs.writeFileSync(path.join(DIRECTORY, 'output', 'index.js'), JSON.stringify(fileContent))
+  fs.writeFileSync(path.join(DIRECTORY, 'output', 'index.string.js'), JSON.stringify(fileContent))
+  fs.writeFileSync(path.join(DIRECTORY, 'output', 'index.js'), fileContent)
   // console.log('fileContent', fileContent)
 })
