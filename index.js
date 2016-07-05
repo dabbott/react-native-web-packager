@@ -5,11 +5,14 @@ var webpack = require("webpack")
 
 var DIRECTORY = __dirname
 
-// var mfs = new MemoryFS()
+var mfs = new MemoryFS()
 var compiler = webpack({
-  entry: './assets/index.ios.js',
+  entry: {
+    index: path.join(DIRECTORY, 'input/index.ios.js'),
+  },
   output: {
-    filename: './bundle/bundle.js',
+    path: path.join(DIRECTORY, 'output'),
+    filename: '[name].js',
   },
   module: {
     loaders: [
@@ -34,12 +37,12 @@ var compiler = webpack({
   },
 })
 
-// compiler.outputFileSystem = mfs
+compiler.outputFileSystem = mfs
 compiler.run(function(err, stats) {
   if (err) {
     throw err
   } else if (stats.hasErrors()) {
-    console.log('biuld erros')
+    console.log('build errors')
     stats.toString({
       chunks: false, // Makes the build much quieter
       colors: false,
@@ -48,6 +51,7 @@ compiler.run(function(err, stats) {
   }
   console.log('stats', stats)
   var statsString = JSON.stringify(stats.toJson('verbose'), null, 2)
-  fs.writeFileSync(path.join(DIRECTORY, 'bundle', 'stats.json'), statsString)
-  // var fileContent = mfs.readFileSync("...")
+  fs.writeFileSync(path.join(DIRECTORY, 'output', 'stats.json'), statsString)
+  var fileContent = mfs.readFileSync(path.join(DIRECTORY, 'output/index.js'), 'utf8')
+  console.log('fileContent', fileContent)
 })
