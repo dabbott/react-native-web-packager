@@ -2,9 +2,9 @@
   "name": "react-native-web-packager",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node --harmony example.js",
     "clean": "rm -rf output",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
