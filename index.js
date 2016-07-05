@@ -1,14 +1,14 @@
 var fs = require('fs')
 var path = require('path')
-var MemoryFS = require("memory-fs")
-var webpack = require("webpack")
+var MemoryFS = require('memory-fs')
+var webpack = require('webpack')
 
 var DIRECTORY = __dirname
 
 var mfs = new MemoryFS()
 var compiler = webpack({
   entry: {
-    index: path.join(DIRECTORY, 'input/index.ios.js'),
+    index: path.join(DIRECTORY, 'input', 'index.ios.js'),
   },
   output: {
     path: path.join(DIRECTORY, 'output'),
@@ -22,13 +22,13 @@ var compiler = webpack({
       commonjs: 'react',
       amd: 'react'
     },
-    "react-dom": {
+    'react-dom': {
       root: 'ReactDOM',
       commonjs2: 'react-dom',
       commonjs: 'react-dom',
       amd: 'react-dom'
     },
-    "react-native": {
+    'react-native': {
       root: 'ReactNative',
       commonjs2: 'react-native',
       commonjs: 'react-native',
@@ -41,15 +41,8 @@ var compiler = webpack({
         test: /\.js$/,
         loader: 'babel-loader',
         query: {
-          "babelrc": false,
-          "presets": [
-            "es2015",
-            "stage-1",
-            "react",
-          ],
-          "plugins": [
-            "transform-decorators-legacy",
-          ],
+          babelrc: false,
+          presets: ['react-native'],
           cacheDirectory: true,
         }
       },
