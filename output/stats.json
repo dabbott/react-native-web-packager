@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "1.13.1",
-  "hash": "20f1b2c704a3a77112e1",
-  "time": 594,
+  "hash": "2daff02003fc67162773",
+  "time": 417,
   "publicPath": "",
   "assetsByChunkName": {
     "index": "index.js"
@@ -11,7 +11,7 @@
   "assets": [
     {
       "name": "index.js",
-      "size": 4475,
+      "size": 6840,
       "chunks": [
         0
       ],
@@ -28,14 +28,14 @@
       "initial": true,
       "entry": true,
       "extraAsync": false,
-      "size": 3016,
+      "size": 5281,
       "names": [
         "index"
       ],
       "files": [
         "index.js"
       ],
-      "hash": "77baa536c0061fdd622f",
+      "hash": "a7abc7d056cd8408666d",
       "parents": [],
       "modules": [
         {
@@ -43,8 +43,8 @@
           "identifier": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
           "name": "./input/index.ios.js",
           "index": 0,
-          "index2": 0,
-          "size": 3016,
+          "index2": 2,
+          "size": 5197,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -58,7 +58,69 @@
           "errors": 0,
           "warnings": 0,
           "reasons": [],
-          "source": "'use strict';\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * Sample React Native App\n * https://github.com/facebook/react-native\n * \n */\n\n// import React, { Component } from 'react';\n// import {\n//   AppRegistry,\n//   StyleSheet,\n//   Text,\n//   View\n// } from 'react-native';\n\nvar Project = function (_Component) {\n  _inherits(Project, _Component);\n\n  function Project() {\n    _classCallCheck(this, Project);\n\n    return _possibleConstructorReturn(this, Object.getPrototypeOf(Project).apply(this, arguments));\n  }\n\n  _createClass(Project, [{\n    key: 'render',\n    value: function render() {\n      return React.createElement(\n        View,\n        { style: styles.container },\n        React.createElement(\n          Text,\n          { style: styles.welcome },\n          'Welcome to React Native!'\n        ),\n        React.createElement(\n          Text,\n          { style: styles.instructions },\n          'To get started, edit index.ios.js'\n        ),\n        React.createElement(\n          Text,\n          { style: styles.instructions },\n          'Press Cmd+R to reload,',\n          '\\n',\n          'Cmd+D or shake for dev menu'\n        )\n      );\n    }\n  }]);\n\n  return Project;\n}(Component);\n\nvar styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    justifyContent: 'center',\n    alignItems: 'center',\n    backgroundColor: '#F5FCFF'\n  },\n  welcome: {\n    fontSize: 20,\n    textAlign: 'center',\n    margin: 10\n  },\n  instructions: {\n    textAlign: 'center',\n    color: '#333333',\n    marginBottom: 5\n  }\n});\n\nAppRegistry.registerComponent('Project', function () {\n  return Project;\n});"
+          "source": "'use strict';\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactNative = require('react-native');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Sample React Native App\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * https://github.com/facebook/react-native\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * \n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */\n\nvar Project = function (_Component) {\n  _inherits(Project, _Component);\n\n  function Project() {\n    _classCallCheck(this, Project);\n\n    return _possibleConstructorReturn(this, Object.getPrototypeOf(Project).apply(this, arguments));\n  }\n\n  _createClass(Project, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        _reactNative.View,\n        { style: styles.container },\n        _react2.default.createElement(\n          _reactNative.Text,\n          { style: styles.welcome },\n          'Welcome to React Native!'\n        ),\n        _react2.default.createElement(\n          _reactNative.Text,\n          { style: styles.instructions },\n          'To get started, edit index.ios.js'\n        ),\n        _react2.default.createElement(\n          _reactNative.Text,\n          { style: styles.instructions },\n          'Press Cmd+R to reload,',\n          '\\n',\n          'Cmd+D or shake for dev menu'\n        )\n      );\n    }\n  }]);\n\n  return Project;\n}(_react.Component);\n\nvar styles = _reactNative.StyleSheet.create({\n  container: {\n    flex: 1,\n    justifyContent: 'center',\n    alignItems: 'center',\n    backgroundColor: '#F5FCFF'\n  },\n  welcome: {\n    fontSize: 20,\n    textAlign: 'center',\n    margin: 10\n  },\n  instructions: {\n    textAlign: 'center',\n    color: '#333333',\n    marginBottom: 5\n  }\n});\n\n_reactNative.AppRegistry.registerComponent('App', function () {\n  return Project;\n});"
+        },
+        {
+          "id": 1,
+          "identifier": "external \"React\"",
+          "name": "external \"React\"",
+          "index": 1,
+          "index2": 0,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
+              "module": "./input/index.ios.js",
+              "moduleName": "./input/index.ios.js",
+              "type": "cjs require",
+              "userRequest": "react",
+              "loc": "5:13-29"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "identifier": "external \"ReactNative\"",
+          "name": "external \"ReactNative\"",
+          "index": 2,
+          "index2": 1,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
+              "module": "./input/index.ios.js",
+              "moduleName": "./input/index.ios.js",
+              "type": "cjs require",
+              "userRequest": "react-native",
+              "loc": "9:19-42"
+            }
+          ]
         }
       ],
       "filteredModules": 0,
@@ -81,8 +143,8 @@
       "identifier": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
       "name": "./input/index.ios.js",
       "index": 0,
-      "index2": 0,
-      "size": 3016,
+      "index2": 2,
+      "size": 5197,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -96,7 +158,69 @@
       "errors": 0,
       "warnings": 0,
       "reasons": [],
-      "source": "'use strict';\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * Sample React Native App\n * https://github.com/facebook/react-native\n * \n */\n\n// import React, { Component } from 'react';\n// import {\n//   AppRegistry,\n//   StyleSheet,\n//   Text,\n//   View\n// } from 'react-native';\n\nvar Project = function (_Component) {\n  _inherits(Project, _Component);\n\n  function Project() {\n    _classCallCheck(this, Project);\n\n    return _possibleConstructorReturn(this, Object.getPrototypeOf(Project).apply(this, arguments));\n  }\n\n  _createClass(Project, [{\n    key: 'render',\n    value: function render() {\n      return React.createElement(\n        View,\n        { style: styles.container },\n        React.createElement(\n          Text,\n          { style: styles.welcome },\n          'Welcome to React Native!'\n        ),\n        React.createElement(\n          Text,\n          { style: styles.instructions },\n          'To get started, edit index.ios.js'\n        ),\n        React.createElement(\n          Text,\n          { style: styles.instructions },\n          'Press Cmd+R to reload,',\n          '\\n',\n          'Cmd+D or shake for dev menu'\n        )\n      );\n    }\n  }]);\n\n  return Project;\n}(Component);\n\nvar styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    justifyContent: 'center',\n    alignItems: 'center',\n    backgroundColor: '#F5FCFF'\n  },\n  welcome: {\n    fontSize: 20,\n    textAlign: 'center',\n    margin: 10\n  },\n  instructions: {\n    textAlign: 'center',\n    color: '#333333',\n    marginBottom: 5\n  }\n});\n\nAppRegistry.registerComponent('Project', function () {\n  return Project;\n});"
+      "source": "'use strict';\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactNative = require('react-native');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Sample React Native App\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * https://github.com/facebook/react-native\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * \n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */\n\nvar Project = function (_Component) {\n  _inherits(Project, _Component);\n\n  function Project() {\n    _classCallCheck(this, Project);\n\n    return _possibleConstructorReturn(this, Object.getPrototypeOf(Project).apply(this, arguments));\n  }\n\n  _createClass(Project, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        _reactNative.View,\n        { style: styles.container },\n        _react2.default.createElement(\n          _reactNative.Text,\n          { style: styles.welcome },\n          'Welcome to React Native!'\n        ),\n        _react2.default.createElement(\n          _reactNative.Text,\n          { style: styles.instructions },\n          'To get started, edit index.ios.js'\n        ),\n        _react2.default.createElement(\n          _reactNative.Text,\n          { style: styles.instructions },\n          'Press Cmd+R to reload,',\n          '\\n',\n          'Cmd+D or shake for dev menu'\n        )\n      );\n    }\n  }]);\n\n  return Project;\n}(_react.Component);\n\nvar styles = _reactNative.StyleSheet.create({\n  container: {\n    flex: 1,\n    justifyContent: 'center',\n    alignItems: 'center',\n    backgroundColor: '#F5FCFF'\n  },\n  welcome: {\n    fontSize: 20,\n    textAlign: 'center',\n    margin: 10\n  },\n  instructions: {\n    textAlign: 'center',\n    color: '#333333',\n    marginBottom: 5\n  }\n});\n\n_reactNative.AppRegistry.registerComponent('App', function () {\n  return Project;\n});"
+    },
+    {
+      "id": 1,
+      "identifier": "external \"React\"",
+      "name": "external \"React\"",
+      "index": 1,
+      "index2": 0,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
+          "module": "./input/index.ios.js",
+          "moduleName": "./input/index.ios.js",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "5:13-29"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "identifier": "external \"ReactNative\"",
+      "name": "external \"ReactNative\"",
+      "index": 2,
+      "index2": 1,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/devinabbott/Projects/react-native-web-packager/node_modules/babel-loader/index.js?{\"babelrc\":false,\"presets\":[\"es2015\",\"stage-1\",\"react\"],\"plugins\":[\"transform-decorators-legacy\"],\"cacheDirectory\":true}!/Users/devinabbott/Projects/react-native-web-packager/input/index.ios.js",
+          "module": "./input/index.ios.js",
+          "moduleName": "./input/index.ios.js",
+          "type": "cjs require",
+          "userRequest": "react-native",
+          "loc": "9:19-42"
+        }
+      ]
     }
   ],
   "filteredModules": 0,

@@ -14,6 +14,11 @@ var compiler = webpack({
     path: path.join(DIRECTORY, 'output'),
     filename: '[name].js',
   },
+  externals: {
+    react: 'React',
+    "react-dom": 'ReactDOM',
+    "react-native": 'ReactNative',
+  },
   module: {
     loaders: [
       {
@@ -51,7 +56,9 @@ compiler.run(function(err, stats) {
   }
   console.log('stats', stats)
   var statsString = JSON.stringify(stats.toJson('verbose'), null, 2)
+  var fileContent = mfs.readFileSync(path.join(DIRECTORY, 'output', 'index.js'), 'utf8')
+
   fs.writeFileSync(path.join(DIRECTORY, 'output', 'stats.json'), statsString)
-  var fileContent = mfs.readFileSync(path.join(DIRECTORY, 'output/index.js'), 'utf8')
-  console.log('fileContent', fileContent)
+  fs.writeFileSync(path.join(DIRECTORY, 'output', 'index.js'), JSON.stringify(fileContent))
+  // console.log('fileContent', fileContent)
 })

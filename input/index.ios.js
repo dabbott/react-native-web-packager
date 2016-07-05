@@ -4,13 +4,13 @@
  * @flow
  */
 
-// import React, { Component } from 'react';
-// import {
-//   AppRegistry,
-//   StyleSheet,
-//   Text,
-//   View
-// } from 'react-native';
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
 
 class Project extends Component {
   render() {
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Project', () => Project);
+AppRegistry.registerComponent('App', () => Project);
